@@ -1,9 +1,0 @@
-https://api.openai.com/v1/embeddings \
-  -H "Authorization: Bearer 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" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "input": "The food was delicious and the waiter...",
-    "model": "text-embedding-ada-002"
-}'
-
-# pip install tiktoken 
