@@ -1,4 +1,6 @@
 def solution(list_n, x):
+    if len(list_n) < 2:
+        return "array's length can't be less than 2"
     res = []
     i = 0
     n = 0
@@ -6,6 +8,7 @@ def solution(list_n, x):
     count = 0
 
     while i <= len(list_n):
+        # Circlic check occurs here
         if limit == len(list_n):
             i = -1
             res.append(int(list_n[i+1]) + int(list_n[i+2]))
